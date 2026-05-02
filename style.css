@@ -109,7 +109,7 @@ nav {
 
 /* Image 1 — always visible, no animation needed, sits at the bottom */
 .hero {
-  background-image: url("images/IMG-20260311-WA0021.jpg");
+  background-image: url("images/larry-animation-a.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -121,7 +121,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("images/Larry image animation.jpg");
+  background-image: url("images/larry-image-animation.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -134,7 +134,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("images/Larry animation 1 replace.jpg");
+  background-image: url("images/larry-animation-1-replace.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0;
