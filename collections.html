@@ -4,65 +4,206 @@
   <meta charset="UTF-8">
   <title>Collections</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="collections-page">
- 
-  
-<a href="index.html">← Back to Home</a>
- <!-- HEADER -->
+  <nav>
+    <span><img src="images/Logo 2.jpg" class="nav-logo"></span>
+    <span><div class="nav-logo-text">LarryB</div></span>
+    <ul class="nav-links">
+      <li><a href="#">New Arrivals</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">Accessories</a></li>
+    </ul>
+    <div id="cart-modal">
+      <div class="cart-box">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+      </div>
+    </div>
+    <div class="cart-icon">
+      <a href="cart.html">
+        <i class="fa fa-shopping-bag" id="cart-btn"></i>
+        <span id="cart-count">0</span>
+      </a>
+      <i class="fa fa-contact" id="contact-btn"></i>
+    </div>
+  </nav>
+
+  <div class="page-filter">
+    <select id="typeFilter">
+      <option value="all">All Types</option>
+      <option value="bubu">bubu</option>
+      <option value="gowns">gowns</option>
+    </select>
+
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+    </select>
+    <input type="number" id="minPrice" placeholder="Min price">
+    <input type="number" id="maxPrice" placeholder="Max price">
+    <button onclick="applyFilters()" class="filter-btn">Filter</button>
+  </div>
+
+  <!-- HEADER -->
   <section class="collections-header">
+    <a href="index.html" class="home-link">Home</a>
     <h1>All Collections</h1>
     <p>Explore our full range of elegant fashion pieces</p>
   </section>
- <div class="collections">
 
-  <div class="collection-card">
-    <img src="images/file_00000000ba6c71f48b8829c14fbfd9bc.png" onclick="openImage(this)">
+  <div class="collections">
+
+    <div class="collection-card"  data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/WhatsApp Image 2026-04-22 at 13.58.19 (1).jpeg"
+           data-name="Collection Piece 1"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 1" data-price="25000" 
+      data-img="images/WhatsApp Image 2026-04-22 at 13.58.19 (1).jpeg">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="bubu" data-type="bubu" data-price="25000">
+      <img src="images/WhatsApp Image 2026-04-22 at 13.58.19.jpeg"
+           data-name="Collection Piece 2"
+           data-price="25000"
+           data-category="bubu"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 2" data-price="25000"
+      data-img="images/WhatsApp Image 2026-04-22 at 13.58.19.jpeg">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="bubu" data-type="bubu" data-price="25000">
+      <img src="images/Bubu 3.png"
+           data-name="Collection Piece 3"
+           data-price="25000"
+           data-category="bubu"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 3" data-price="25000"
+      data-img="images/Bubu 3.png">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/Elegant pink dress.png"
+           data-name="Collection Piece 4"
+           data-price="25000"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 4" data-price="25000"
+      data-img="images/Elegant pink dress.png">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/Airbrush-BG-CHANGER-1776945336139.jpg"
+           data-hover="images/file_107.png"
+           data-name="Collection Piece 5"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 5" data-price="25000"
+      data-img="images/Airbrush-BG-CHANGER-1776945336139.jpg">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/Airbrush-BG-CHANGER-1776945467536.jpg"
+           data-hover="images/Elegant Portrait of a confident woman.png"
+           data-name="Collection Piece 6"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 6" data-price="25000"
+      data-img="images/Airbrush-BG-CHANGER-1776945467536.jpg">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/Design.png"
+           data-name="Collection Piece 7"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 7" data-price="25000"
+      data-img="images/Design.png">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/Theresa 8.jpg"
+           data-hover="images/Theresa 9.png"
+           data-name="Collection Piece 8"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 8" data-price="25000"
+      data-img="images/Theresa 8.jpg">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/file_0000000052307243b7cb496123f950b1.png"
+           data-name="Collection Piece 9"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 9" data-price="25000"
+      data-img="images/file_0000000052307243b7cb496123f950b1.png">Add to Cart</button>
+    </div>
+
+    <div class="collection-card" data-category="gowns" data-type="gowns" data-price="25000">
+      <img src="images/image.png"
+           data-name="Collection Piece 10"
+           data-price="25000"
+           data-category="gowns"
+           onclick="goToProduct(this)">
+      <button class="collection-add-to-cart" data-name="Collection Piece 10" data-price="25000"
+      data-img="images/image.png">Add to Cart</button>
+    </div>
+
   </div>
 
-  <div class="collection-card">
-    <img src="images/file_00000000fab4720cad138a569e6a90ef.png" onclick="openImage(this)">
-  </div>
+  <footer class="footer-section">
+    <p class="footer-text">Designed With Intention</p>
+    <div class="card-container">
+      <div class="footer-card">
+        <img src="images/Black_check_icon-removebg-preview.png" class="card-image" id="card-image-1" alt="check-mark">
+        <div class="footer-info">
+          <h2 class="footer-image-name">Premium Materials</h2>
+          <p class="footer-description">Carefully selected fabrics for lasting<br> quality and comfort.</p>
+        </div>
+      </div>
+      <div class="footer-card">
+        <img src="images/Scissors-removebg-1.png" class="card-image" id="card-image-2" alt="scissors-icon">
+        <div class="footer-info">
+          <h2 class="footer-image-name">Timeless Silhouettes</h2>
+          <p class="footer-description">Designs that transcends trends and<br>elevate your style.</p>
+        </div>
+      </div>
+      <div class="footer-card">
+        <img src="images/Sewing_Machine-1.png" class="card-image" id="card-image-3" alt="sewing-machine-icon">
+        <div class="footer-info">
+          <h2 class="footer-image-name">Precision Tailoring</h2>
+          <p class="footer-description">Expert craftsmanship for the perfect fit.</p>
+        </div>
+      </div>
+      <div class="footer-card">
+        <img src="images/Mannequin.png" class="card-image" id="card-image-4" alt="mannequin icon">
+        <div class="footer-info">
+          <h2 class="footer-image-name">Refined Collection</h2>
+          <p class="footer-image-description">Curated pieces for a wardrope that<br> works beautifully</p>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <h5 class="contact-text">Get In Touch</h5>
+      <div class="contact-card">
+        <span id="email-ad"> ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=majestyemeka12@gmail.com">majestyemeka12@gmail.com</a></span>
+        <div class="social-media">
+          <p id="link-text">Let's connect</p>
+          <a href="https://www.instagram.com/larryb_casuals">→instagram</a>
+          <a href="https://www.tiktok.com/larryb_casuals">→tiktok</a>
+          <a href="https://wa.me/09015490089">→whatsapp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <div class="collection-card">
-    <img src="images/file_000000002f04720aba85ca5efdc31a45.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_000000003ba87243a723fab37212f584.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_000000006b34724685df4f4da92452cd.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_0000000014c071f48c6c8afa7a8f65ee.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_00000000395c71f48e56e472f5ea0a09.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_00000000917c7246869c4ce9e957130f.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_00000000236871f49dfaa9afccf98491.png" onclick="openImage(this)">
-  </div>
-
-  <div class="collection-card">
-    <img src="images/file_0000000052307243b7cb496123f950b1.png" onclick="openImage(this)">
-  </div>
-
-</div>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeImage()">
-  <img id="lightbox-img" onclick="event.stopPropagation()">
-</div>
-
-<script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

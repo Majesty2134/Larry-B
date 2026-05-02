@@ -11,28 +11,29 @@
 </head>
 <body>
   
-     <nav>
-            <div class="nav-logo">Larry B </div>
+       <nav>
+         <span><img src="images/Logo 2.jpg" class="nav-logo"></span>  
+         <span><div class="nav-logo-text">LarryB</div></span>
             <ul class="nav-links">
                   <li><a href="#">New Arrivals</a> </li> 
                  <li><a href="#">Best Sellers</a> </li> 
                  <li><a href="#">Accessories</a> </li> 
             </ul>
-                 <div id="cart-modal"> 
+                 <div id="cart-modal">  
                     <div class="cart-box">
                           <h2>Your Cart</h2>
                       <div id="cart-items"></div>
-                         <p id="cart-total"></p>
+                         
                          </div>
                          </div>
                             </div>
-                 <div class="nav-icons">
-                 <div class="cart-icon">
-                    <i class="fa fa-shopping-bag" id="cart-btn"></i> 
-                    <span id="cart-count">0</span>
-                        </div>  
-                     <i class="fa fa-user"></i>
-                    </div>
+                <div class="cart-icon">
+  <a href="cart.html">
+    <i class="fa fa-shopping-bag" id="cart-btn"></i>
+    <span id="cart-count">0</span>
+  </a>
+  <i class="fa fa-contact" id="contact-btn"></i>
+</div>
                     
                 </nav>
 
@@ -45,13 +46,16 @@
                         <span>Magic</span> <span id="everyday">In</span> <br>
                             <span id="confidence">Creativity</span>   
                             </h1> 
-                    </div>
-                    
+
                     <p class="hero-p">Where timeless design meets refined style to<br> elevate your wardrope.</p>
+                    </div>
+                    <div class="hero-buttons"> 
 
                      <a href="viewcollections.html" class="btn btn-primary">VIEW COLLECTION</a> 
-                    <a href="bestsellers.html" class="btn-ghost">EXPLORE BESTSELLERS</a> <span id="makeenquiry"><a href="Enquiry-form.html" class="btn-secondary">Make Enuiry</a></a></span>
-                </section>
+                    <a href="bestsellers.html" class="btn-ghost">EXPLORE BESTSELLERS</a>  
+                    <a href="Enquiry-form.html" class="btn-secondary">Make Enuiry</a> 
+                      </div>
+                    </section>
 
                 <section class="featured-collection">
                     <div class="header"> 
@@ -59,36 +63,109 @@
                 <span id="view"><a href="collections.html">view all</a></span>
                     </div>
 
-                    <div class="gallery"> 
-                        <div class="card"> 
-                     <img src="images/2 piece design 1.jpg.jpg" class="card-1" alt="2 piece design">
-                     <div class="style-info"> 
-                     <p class="style-name">Elegant power blazing 2 piece suit</p>
-                     <p class="style-description">Structured tailoring for a confident, <br> refined look</p>
-                     
-                    </div>
-                     </div>
+                    <div class="gallery-slider">
+   
+ <div class="viewport">
+  <button class="prev">➡️</button>
 
-                     <div class="card">
-                        <img src="images/2 piece design 3.jpg.jpg" alt="2 piece design">
-                        <p class="style-name">Exqusite hot 2 piece blouse and pant combo</p>
-                        <p class="style-description">Classy design</p>
-                        </button>
-                     </div>
+  <div class="track" id="track">
+    <div class="card">
+      <img src="images/2 piece design 1.jpg.jpg" alt="Elegant power blazing 2 piece suit"
+      data-name="Collection Piece 7"
+           onclick="goToProduct(this)">
+      <p class="style-name">Elegant power blazing 2 piece suit</p>
+      <p class="style-description">Structured tailoring for a confident, refined look</p>
+    </div>
 
-                     <div class="card">
-                        <img src="images/bubu design 1.png.jpg" alt=" bubu design">
-                        <p class="style-name">Stylish egyptian style bubu design</p>
-                        <p class="style-description">Slay like a queen that you are</p>
-                     </div>
+    <div class="card">
+      <img src="images/2 piece design 3.jpg.jpg" alt="Exquisite hot 2 piece blouse and pant combo"
+      data-name="Collection Piece 8"
+           onclick="goToProduct(this)">
+      <p class="style-name">Exquisite hot 2 piece blouse and pant combo</p>
+      <p class="style-description">Classy design</p>
+    </div>
 
-                     <div class="card-2">
-                        <img src="images/bubu design 2.jpg.jpg" alt="royal bubu design">
-                        <p class="style-name">Royal blue bubu style</p>
-                        <p class="style-description">Look elegant and magnanimous<br>in this beautiful bubu style</p>
-                     </div>
-                     </div>
-                </section>
+    <div class="card">
+      <img src="images/bubu design 1.png.jpg" alt="Stylish Egyptian style bubu design"
+      data-name="Collection Piece 9"
+           onclick="goToProduct(this)">
+      <p class="style-name">Stylish Egyptian style bubu design</p>
+      <p class="style-description">Slay like a queen</p>
+    </div>
+
+    <div class="card">
+      <img src="images/bubu design 2.jpg.jpg" alt="Royal blue bubu style"
+      data-name="Collection Piece 10"
+           onclick="goToProduct(this)">
+      <p class="style-name">Royal blue bubu style</p>
+      <p class="style-description">Look elegant</p>
+    </div>
+
+    <div class="card">
+      <img src="images/bubu design 2.jpg.jpg" alt="Royal blue bubu style"
+      data-name="Collection Piece 11"
+           onclick="goToProduct(this)">
+      <p class="style-name">Royal blue bubu style</p>
+      <p class="style-description">Look elegant</p>
+    </div>
+  </div>
+
+  <button class="next">⬅️</button>
+</div>
+  </section>
+
+
+   <section class="about-hero">
+    <div class="about-hero-inner">
+      <p class="about-hero-label">Our Story</p>
+      <h1 class="about-hero-title">Dressed with<br><em>intention.</em></h1>
+    </div>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="about-story">
+    <div class="about-story-inner">
+      <div class="about-story-text">
+        <span class="about-overline">How It Started</span>
+        <h2 class="about-story-heading">A love for dressing<br>well — made into a brand.</h2>
+        <p>Larry B began with a young woman who had always loved to look good. Long before she called herself a fashion designer, she was already living it — dressing with care, noticing how the right outfit could shift the way a woman carries herself, and dreaming of building something that gave other women that same feeling.</p>
+        <p>That dream became LARRY B — a brand born not from a business plan, but from a genuine, deep-rooted passion for style, elegance, and the quiet confidence that comes with dressing well.</p>
+        <p>Today, Larry B is driven by that same energy: exquisite pieces, a love for nature and beauty, and the belief that every woman deserves to feel remarkable in what she wears.</p>
+      </div>
+      <div class="about-story-image">
+        <img src="images/Larry b story.jpg" alt="Larry B story" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="about-pillars">
+    <div class="about-pillars-inner">
+      <div class="pillar">
+        <span class="pillar-icon">✦</span>
+        <h3>Look Good</h3>
+        <p>Every piece is chosen and crafted with a single standard — it has to be exceptional. No compromises on quality, cut, or finish.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">✦</span>
+        <h3>Feel Good</h3>
+        <p>Style should feel like you. Larry B dresses are made to move with you, flatter you, and remind you of who you are the moment you put them on.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon">✦</span>
+        <h3>Be You</h3>
+        <p>Bold. Chill. Classy. Whatever your version of beautiful looks like — Larry B is here for it. Dress on your own terms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE STRIP -->
+  <section class="about-quote">
+    <blockquote>
+      "She didn't just want to look good —<br>she wanted every woman to feel it too."
+    </blockquote>
+    <cite>— The story behind Larry B</cite>
+  </section>
 
                 <footer class="footer-section">
                     <p class="footer-text">Designed With Intention</p>
@@ -125,21 +202,151 @@
                         </div>
                     </div>
                   </div>
+   
                   <div class="contact"> 
                   <h5 class="contact-text">Get In Touch</h5>
                   <div class="contact-card"> 
-                 <span id="email-ad"> ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=majestyemeka12@gmail.com">
-                    majestyemeka12@gmail.com
+                 <span id="email-ad"> ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Lawrenceblessing681@gmail.com">
+                     Lawrenceblessing681@gmail.com
                     </a></span>
-                  <span><a class="btn-handle" href="https://www.instagram.com/larryb_casuals">
-                     Follow us on Instagram
-                    </a></span>
+                    <div class="social-media"> 
+                   <p id="link-text">Let's connect</p>
+                    <a href="https://www.instagram.com/larryb_casuals">→instagram</a>
+                    <a href="https://www.tiktok.com/larryb_casuals">→tiktok</a>
+                    <a href="https://wa.me/09015490089">→whatsapp</a>
+                    </div>
                   </div>
-                  </div>
+
+                    <!-- PAGE HEADER -->
+  <section class="contact-hero">
+    <p class="about-hero-label">Get In Touch</p>
+    <h1 class="contact-hero-title">We'd love to<br><em>hear from you.</em></h1>
+  </section>
+
+  <!-- CONTACT + FORM -->
+  <section class="contact-body">
+    <div class="contact-body-inner">
+
+      <!-- LEFT: contact details -->
+      <div class="contact-info-col">
+        <span class="about-overline">Reach Us</span>
+        <p class="contact-intro">Have a question about an order, sizing, or just want to say hello? We're here for it. Reach out through any of the channels below or send us a message directly.</p>
+
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Instagram</span>
+          <a href="https://instagram.com/larryb_casuals" target="_blank" class="contact-detail-value">@larryb_casuals</a>
+        </div>
+
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Email</span>
+          <a href="mailto:Lawrenceblessing681@gmail.com" class="contact-detail-value">Lawrenceblessing681@gmail.com</a>
+        </div>
+
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Location</span>
+          <span class="contact-detail-value">Lagos, Nigeria</span>
+        </div>
+
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Response Time</span>
+          <span class="contact-detail-value">Within 24–48 hours</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: message form -->
+      <div class="contact-form-col">
+        <span class="about-overline">Send a Message</span>
+        <div class="contact-form-wrap">
+          <div class="name-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Ada" />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Okonkwo" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cemail">Email Address</label>
+            <input type="email" id="cemail" placeholder="ada@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Order enquiry, sizing help, etc." />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us what's on your mind…"></textarea>
+          </div>
+          <button class="contact-submit-btn" onclick="handleContactSubmit()">Send Message</button>
+          <p class="contact-form-note" id="contact-sent-msg" style="display:none; color:#2EAE5E; margin-top:10px; font-size:13px;">✓ Message sent! We'll get back to you shortly.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+                     <!-- FAQ -->
+                  <section class="faq-section">
+    <div class="faq-inner">
+      <span class="about-overline" style="text-align:center; display:block;">Got Questions?</span>
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleFaq(this)">
+          What sizes do you carry?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          Larry B carries sizes S through XXL across most styles. Some custom and limited pieces may vary. If you're unsure about sizing, feel free to reach out via Instagram or email and we'll help you find your perfect fit.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleFaq(this)">
+          Do you offer custom or made-to-order pieces?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          Yes — custom orders are available for select styles. Send us a message with your measurements and what you have in mind and we'll let you know what's possible. Custom orders typically take 7–14 business days.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleFaq(this)">
+          How long does delivery take?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          Delivery within Lagos typically takes 1–3 business days. Orders outside Lagos are delivered within 3–7 business days depending on your location. You'll receive a confirmation once your order has been dispatched.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleFaq(this)">
+          What is your return or exchange policy?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          We accept exchanges within 7 days of delivery for items that are unworn, unwashed, and in original condition. Please contact us before sending anything back so we can guide you through the process.
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleFaq(this)">
+          How do I care for my Larry B pieces?
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          Most pieces are best hand-washed or put on a gentle machine cycle in cold water. Avoid bleach and tumble drying to preserve the fabric and fit. Care instructions are included with every order.
+        </div>
+      </div>
+
+    </div>
+  </section>
                 </footer>
 
-                
-            
-    <script src="script.js"></script>
+    <script src=script.js></script>
 </body>
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Larry B</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="product-page">
+
+  <!-- NAV -->
+<nav>
+         <span><img src="images/Logo 2.jpg" class="nav-logo"></span>  
+         <span><div class="nav-logo-text">LarryB</div></span>
+            <ul class="nav-links">
+                  <li><a href="#">New Arrivals</a> </li> 
+                 <li><a href="#">Best Sellers</a> </li> 
+                 <li><a href="#">Accessories</a> </li> 
+            </ul>
+                 <div id="cart-modal">  
+                    <div class="cart-box">
+                          <h2>Your Cart</h2>
+                      <div id="cart-items"></div>
+                         
+                         </div>
+                         </div>
+                            </div>
+                <div class="cart-icon">
+  <a href="cart.html">
+    <i class="fa fa-shopping-bag" id="cart-btn"></i>
+    <span id="cart-count">0</span>
+  </a>
+  <i class="fa fa-contact" id="contact-btn"></i>
+</div>
+                    
+                </nav>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+    <a href="collections.html">Collections</a>
+    <span class="sep">›</span>
+    <span id="breadcrumb-name">Product</span>
+  </nav>
+
+  <!-- PRODUCT LAYOUT -->
+  <div class="product-container">
+
+    <!-- LEFT: IMAGE -->
+    <div class="product-image-wrap">
+      <img id="product-main-img" src="" alt="Product Image" />
+    </div>
+
+    <!-- RIGHT: DETAILS -->
+    <div class="product-details">
+
+      <p class="product-label" id="product-label"></p>
+      <h1 class="product-title" id="product-title">Loading...</h1>
+
+      <div class="divider"></div>
+
+      <p class="product-price" id="product-price">Price on request</p>
+
+      <!-- COLOUR SELECTOR -->
+      <div class="selector-group">
+        <p class="selector-label">Select Colour</p>
+        <div class="colour-swatches" id="colourSwatches">
+          <button class="swatch" data-colour="blue"  style="background:#7EB3D8;" aria-label="Blue"></button>
+          <button class="swatch" data-colour="pink"  style="background:#F4A7B9;" aria-label="Pink"></button>
+          <button class="swatch" data-colour="rose"  style="background:#C0637A;" aria-label="Rose"></button>
+          <button class="swatch" data-colour="cream" style="background:#EDD9A3;" aria-label="Cream"></button>
+          <button class="swatch" data-colour="green" style="background:#2EAE5E;" aria-label="Green"></button>
+        </div>
+      </div>
+
+      <!-- SIZE SELECTOR -->
+      <div class="selector-group">
+        <div class="size-header">
+          <p class="selector-label">Select Size</p>
+          <a href="#" class="size-guide">Size guide</a>
+        </div>
+        <div class="size-grid" id="sizeGrid">
+          <button class="size-btn" data-size="2">2</button>
+          <button class="size-btn" data-size="4">4</button>
+          <button class="size-btn" data-size="6">6</button>
+          <button class="size-btn" data-size="8">8</button>
+          <button class="size-btn" data-size="10">10</button>
+          <button class="size-btn" data-size="12">12</button>
+          <button class="size-btn" data-size="14">14</button>
+          <button class="size-btn" data-size="16">16</button>
+          <button class="size-btn" data-size="18">18</button>
+          <button class="size-btn" data-size="20">20</button>
+          <button class="size-btn" data-size="22">22</button>
+          <button class="size-btn custom" data-size="custom">Custom Size</button>
+        </div>
+      </div>
+
+      <!-- QUANTITY + ADD TO CART -->
+      <div class="cart-row">
+        <div class="quantity-stepper">
+          <button class="qty-btn" id="qtyMinus">&#8722;</button>
+          <span class="qty-value" id="qtyValue">1</span>
+          <button class="qty-btn" id="qtyPlus">&#43;</button>
+        </div>
+        <button class="add-to-cart" id="addToCart">Add to cart</button>
+      </div>
+
+      <!-- STOCK -->
+      <div class="stock-info">
+        <span class="stock-label">Available:</span>
+        <span class="stock-value">In stock</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- ACCORDION: About This Look -->
+      <div class="accordion">
+        <button class="accordion-header" data-target="aboutLook">
+          <span>About This Look</span>
+          <span class="accordion-icon" id="iconAboutLook">&#8722;</span>
+        </button>
+        <div class="accordion-body open" id="aboutLook">
+          <p>Can be customized to your preferred colour and size.</p>
+        </div>
+      </div>
+
+      <!-- ACCORDION: Product Information -->
+      <div class="accordion">
+        <button class="accordion-header" data-target="productInfo">
+          <span>Product Information</span>
+          <span class="accordion-icon" id="iconProductInfo">&#43;</span>
+        </button>
+        <div class="accordion-body" id="productInfo">
+          <p>Premium fabric. Expert craftsmanship. Designed for elegance and comfort.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-section">
+                    <p class="footer-text">Designed With Intention</p>
+                    <div class="card-container"> 
+                    <div class="footer-card">
+                        <img src="images/Black_check_icon-removebg-preview.png" class="card-image" id="card-image-1" alt="check-mark">
+                         <div class="footer-info"> 
+                        <h2 class="footer-image-name">Premium Materials</h2>
+                        <p class="footer-description">Carefully selected fabrics for lasting<br> quality and comfort.</p>
+                            </div>
+                    </div>
+
+                     <div class="footer-card">
+                        <img src="images/Scissors-removebg-1.png" class="card-image" id="card-image-2" alt="scissors-icon">
+                             <div class="footer-info"> 
+                        <h2 class="footer-image-name">Timeless Silhouettes</h2>
+                        <p class="footer-description">Designs that transcends trends and<br>elevate your style.</p>
+                                </div>
+                    </div>
+
+                    <div class="footer-card">
+                        <img src="images/Sewing_Machine-1.png" class="card-image" id="card-image-3" alt="sewing-machine-icon">
+                        <div class="footer-info"> 
+                        <h2 class="footer-image-name">Precision Tailoring</h2>
+                        <p class="footer-description">Expert craftsmanship for the perfect fit.</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-card">
+                        <img src="images/Mannequin.png" class="card-image" id="card-image-4" alt="mannequin icon">
+                         <div class="footer-info"> 
+                        <h2 class="footer-image-name">Refined Collection</h2>
+                        <p class="footer-image-description">Curated pieces for a wardrope that<br> works beautifully</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="contact"> 
+                  <h5 class="contact-text">Get In Touch</h5>
+                  <div class="contact-card"> 
+                 <span id="email-ad"> ✉️ <a href="https://mail.google.com/mail/?view=cm&fs=1&to=majestyemeka12@gmail.com">
+                    majestyemeka12@gmail.com
+                    </a></span>
+                    <div class="social-media"> 
+                   <p id="link-text">Let's connect</p>
+                    <a href="https://www.instagram.com/larryb_casuals">→instagram</a>
+                    <a href="https://www.tiktok.com/larryb_casuals">→tiktok</a>
+                    <a href="https://wa.me/09015490089">→whatsapp</a>
+                  </div>
+                  </div>
+                  
+                </footer>
+
+ <script src="product.js"></script>
+</body>
+</html>
