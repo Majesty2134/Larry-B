@@ -1753,13 +1753,9 @@ a.contact-detail-value:hover {
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
-
-  }
-
-  .hero-buttons button {
-  padding: 6px 12px;
+    padding: 6px 12px;
   font-size: 9px;
-}
+  }
 
   .btn-ghost,
   .btn-secondary {
@@ -1820,10 +1816,7 @@ a.contact-detail-value:hover {
     font-size: 1.6rem;
   }
 
-  .hero-buttons button {
-  padding: 6px 12px;
-  font-size: 9px;
-}
+   
 
   .viewport {
     width: 100%;
@@ -1852,6 +1845,10 @@ a.contact-detail-value:hover {
   .product-title {
     font-size: 20px;
   }
+ .hero-button {
+  padding: 6px 12px;
+  font-size: 9px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1944,9 +1941,8 @@ a.contact-detail-value:hover {
   .hero-text h1 {
     font-size: 1.6rem;
   }
-  .hero-buttons button {
+  .hero-buttons {
   padding: 6px 12px;
   font-size: 9px;
 }
-
-}
+} 
