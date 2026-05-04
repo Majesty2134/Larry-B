@@ -1895,6 +1895,10 @@ a.contact-detail-value:hover {
     font-size: 12px;
   }
 
+  .contact-text {
+    text-align: left;
+  }
+  
   .card-image {
     width: 30px;
     flex-shrink: 0;
