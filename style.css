@@ -1749,11 +1749,17 @@ a.contact-detail-value:hover {
 
   .hero-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
+
   }
+
+  .hero-buttons button {
+  padding: 6px 12px;
+  font-size: 13px;
+}
 
   .btn-ghost,
   .btn-secondary {
