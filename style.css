@@ -1758,7 +1758,7 @@ a.contact-detail-value:hover {
 
   .hero-buttons button {
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: 9px;
 }
 
   .btn-ghost,
@@ -1819,6 +1819,11 @@ a.contact-detail-value:hover {
   .hero-text h1 {
     font-size: 1.6rem;
   }
+
+  .hero-buttons button {
+  padding: 6px 12px;
+  font-size: 9px;
+}
 
   .viewport {
     width: 100%;
@@ -1939,4 +1944,9 @@ a.contact-detail-value:hover {
   .hero-text h1 {
     font-size: 1.6rem;
   }
+  .hero-buttons button {
+  padding: 6px 12px;
+  font-size: 9px;
+}
+
 }
