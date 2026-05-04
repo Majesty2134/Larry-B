@@ -1897,6 +1897,7 @@ a.contact-detail-value:hover {
 
   .contact-text {
     text-align: left;
+    border-bottom: 9px;
   }
   
   .card-image {
