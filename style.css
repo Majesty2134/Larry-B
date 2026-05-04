@@ -1749,11 +1749,12 @@ a.contact-detail-value:hover {
 
   .hero-buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
   }
-
+  
   .btn-ghost,
   .btn-secondary {
     margin-left: 0;
@@ -1866,9 +1867,11 @@ a.contact-detail-value:hover {
   }
 
   .card img {
-    height: 260px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     width: 100%;
+    display: block;
+    border: none;
   }
 
   .prev,
