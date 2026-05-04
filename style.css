@@ -1801,6 +1801,29 @@ a.contact-detail-value:hover {
     grid-template-columns: 1fr;
     padding: 0 1rem 3rem;
   }
+  @media (max-width: 900px) {
+  .nav-links {
+    display: none; /* Hide links by default on mobile */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex; /* Only show when hamburger is clicked */
+  }
+
+  .hamburger {
+    display: block; /* Ensure the icon is visible */
+    cursor: pointer;
+  }
+}
 }
 
 @media (max-width: 500px) {
@@ -1848,6 +1871,13 @@ a.contact-detail-value:hover {
  .hero-button {
   padding: 6px 12px;
   font-size: 9px;
+}
+
+.collection {
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row instead of 3 */
+    gap: 10px;
+    padding: 10px;
+  
 }
 }
 
@@ -1944,5 +1974,18 @@ a.contact-detail-value:hover {
   .hero-buttons {
   padding: 6px 12px;
   font-size: 9px;
+}
+/* Adjust the filter container - assuming it's a flexbox or grid */
+.collections-filter-container { /* Replace with your actual class name */
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  padding: 10px;
+}
+
+.collections-filter-container input, 
+.collections-filter-container select {
+  width: 100%; /* Make inputs full width on mobile */
+  height: 40px; /* Easier to tap */
 }
 } 
