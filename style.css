@@ -1738,15 +1738,13 @@ a.contact-detail-value:hover {
   .nav-links.open {
     display: flex;
   }
-
-   .hero {
+.hero {
     padding: 4rem 1rem;
   }
 
   .hero-text h1 {
     font-size: 1.6rem;
   }
-
 
 
   .hero-buttons {
@@ -1880,7 +1878,7 @@ a.contact-detail-value:hover {
   .next {
     display: none;
   }
-}
+
 
 .card-container {
     flex-direction: column;
@@ -1935,3 +1933,4 @@ a.contact-detail-value:hover {
   .hero-text h1 {
     font-size: 1.6rem;
   }
+}
