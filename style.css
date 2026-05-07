@@ -1823,18 +1823,10 @@ nav {
 }
 
 /* HERO */
-.hero {
-  padding: 10rem 4rem;
-  position: relative;
-  overflow: hidden;
-  background: url("images/IMG-20260311-WA0021.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+ 
 
 .hero {
-  background-image: url("images/larry-animation-a.jpg");
+  background-image: url("images/background-image.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1845,7 +1837,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("images/larry-image-animation.jpg");
+  background-image: url("images/background-img.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -1857,7 +1849,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url("images/larry-animation-1-replace.jpg");
+  background-image: url("images/Anime.jpeg");
   background-size: cover;
   background-position: center;
   opacity: 0;
@@ -1889,7 +1881,7 @@ nav {
 
 .hero-p {
   margin-bottom: 10px;
-  color: #5c5252;
+  color: #6b5656;
   font-size: 15px;
 }
 
@@ -3317,7 +3309,11 @@ button {
   color: #555;
   line-height: 1.8;
   margin-bottom: 2.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
+
 
 .contact-detail-item {
   display: flex;
@@ -3515,6 +3511,8 @@ a.contact-detail-value:hover {
     grid-template-columns: 1fr;
     padding: 0 1rem 3rem;
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -3626,10 +3624,25 @@ a.contact-detail-value:hover {
   }
 
   .collections {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+.collection-card {
+  margin-top: 0;
+}
+   .collections-header {
+    background-size: cover;
+    padding: 15% 5%;
   }
+  .name-row {
+  flex-direction: column;
+ }
+  .form-container {
+  padding: 16px;
+ }
+
 }
 
 @media (max-width: 500px) {
@@ -3677,4 +3690,11 @@ a.contact-detail-value:hover {
     padding: 6px 12px;
     font-size: 9px;
   }
+   .collections {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 8px;
+ }
+  
+
 }
